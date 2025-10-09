@@ -1,4 +1,5 @@
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))();
 local v15 = v14:CreateWindow({
     Title = "Duy Android",
     SubTitle = "free",
