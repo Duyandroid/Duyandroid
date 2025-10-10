@@ -1,6 +1,6 @@
-local v13 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast%20attack_1.lua"))();
+
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
-local v15 = v13
+local v15 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast%20attack_1.lua"))();
 local v15 = v14:CreateWindow({
     Title = "Duy Android",
     SubTitle = "BETA",
