@@ -1,9 +1,28 @@
+shared.LoaderTitle = "Duy Android";
+shared.LoaderKeyFrames = {
+    [1] = {
+        1,
+        10
+    },
+    [2] = {
+        2,
+        30
+    },
+    [3] = {
+        3,
+        60
+    },
+    [4] = {
+        2,
+        100
+    }
+};
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))()
 local v13 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast%20attack_1.lua"))();
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 ocal v15 = v14:CreateWindow({
     Title = "Duy Android",
-    SubTitle = "Duy Trường",
+    SubTitle = "BETA",
     TabWidth = 160,
     Theme = "Dark",
     Acrylic = false,
