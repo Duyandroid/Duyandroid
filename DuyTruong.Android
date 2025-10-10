@@ -1,20 +1,21 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))()
 local v13 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast%20attack_1.lua"))();
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
-local v15 = v14:CreateWindow({
+ocal v15 = v14:CreateWindow({
     Title = "Duy Android",
-    SubTitle = "BETA",
+    SubTitle = "Duy Trường",
     TabWidth = 160,
-    Theme = "Blue",
+    Theme = "Dark",
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
     MinimizeKey = Enum.KeyCode.End
 });
 local v16 = {
     Home = v15:AddTab({
-        Title = "Tab Information"
+        Title = "thông tin"
     }),
     Main = v15:AddTab({
-        Title = "Tab Farming"
+        Title = "đánh quái cày lever"
     }),
     Sea = v15:AddTab({
         Title = "Tab Volcano And Sea Event"
@@ -2324,7 +2325,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "https://github.com/Duyandroid/Duyadr/blob/main/bright.png";
+v23.Image = "http://www.roblox.com/asset/?id=130379077525916";
 
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(1, 0);
@@ -2403,10 +2404,10 @@ v16.Home:AddButton({
     end
 });
 v16.Home:AddButton({
-    Title = "Nhìn cc j hả :)",
-    Description = "",
+    Title = "Remember:",
+    Description = "tiktok",
     Callback = function()
-        setclipboard("");
+        setclipboard("https://www.tiktok.com/@brightaometa");
     end
 });
 _G.FastAttackStrix_Mode = "Super Fast Attack";
@@ -9027,4 +9028,5 @@ spawn(function()
         end
     end
 end);
+
 
