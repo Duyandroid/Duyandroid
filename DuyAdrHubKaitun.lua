@@ -306,7 +306,7 @@ L_1_[26][L_1_[3]({
 	"BackgroundTransparen";
 	"cy"
 })] = 1
-L_1_[26]["Text"] = "Status : TBoy Roblox"
+L_1_[26]["Text"] = "Status : Duy Android"
 L_1_[26]["TextColor3"] = Color3["fromRGB"](255, 230, 120)
 L_1_[26]["TextSize"] = 16
 L_1_[26]["Font"] = Enum["Font"]["Gotham"]
