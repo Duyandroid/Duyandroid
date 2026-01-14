@@ -2207,8 +2207,8 @@ QuestNeta = function()
 	}
 end
 local v13 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyadr/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
-local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))()
-local v15 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/AttackNguBeta%5BHiru%5D.lua"))()
+local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))();
+local v15 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/AttackNguBeta%5BHiru%5D.lua"))();
 L_1_[16] = (loadstring(game:HttpGet(L_1_[2]({
 	"https://raw.githubus",
 	"ercontent.com/TBoyRo";
