@@ -2206,6 +2206,7 @@ QuestNeta = function()
 		[6] = PosQ
 	}
 end
+local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyadr/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
 L_1_[16] = (loadstring(game:HttpGet(L_1_[2]({
 	"https://raw.githubus",
 	"ercontent.com/TBoyRo";
@@ -2224,8 +2225,8 @@ L_1_[41] = Instance["new"]("ImageButton")
 L_1_[41]["Size"] = UDim2["new"](0, 50, 0, 50)
 L_1_[41]["Position"] = UDim2["new"](.15, 0, .15, 0)
 L_1_[41]["Image"] = L_1_[2]({
-	"rbxassetid://7367578",
-	"7844710"
+	"rbxassetid://103392469608534",
+	
 })
 L_1_[41][L_1_[2]({
 	"BackgroundTransparen";
@@ -2726,14 +2727,14 @@ AttackDropdown = L_1_[93]["Main"]:AddDropdown({
 		"Normal Attack",
 		"Fast Attack",
 		"Super Fast Attack";
-		"Duy Adr Attack"
+		"DuyAdr Attack"
 	};
 	["Default"] = "Fast Attack",
 	["Callback"] = function(L_224_arg0)
 		local L_225_ = {}
 		L_225_[2] = L_224_arg0
 		_G[L_1_[2]({
-			"FastAttackGravity_Mo",
+			"FastAttackDuyAdr_Mo",
 			"de"
 		})] = L_225_[2]
 	end
@@ -2748,14 +2749,14 @@ spawn(function()
 	while task["wait"](.1) do
 		pcall(function()
 			if _G[L_1_[2]({
-				"FastAttackGravity_Mo";
+				"FastAttackDuyAdr_Mo";
 				"de"
 			})] and L_1_[54][_G[L_1_[2]({
-				"FastAttackGravity_Mo",
+				"FastAttackDuyAdr_Mo",
 				"de"
 			})]] then
 				_G["Fast_Delay"] = L_1_[54][_G[L_1_[2]({
-					"FastAttackGravity_Mo";
+					"FastAttackDuyAdr_Mo";
 					"de"
 				})]]
 			end
