@@ -9,6 +9,17 @@ if not getgenv().attackMelee then
         end
     end
 end
+getgenv()._FastAttackBackup = getgenv()._FastAttackBackup or {}
+if not getgenv().attackFruit then
+    for _, v in next, getgc(true) do
+        if typeof(v) == "function"
+and debug.getinfo(v).name == "attackFruit"
+        then
+            getgenv().attackFruit = v
+            break
+        end
+    end
+end
 local Players = game:GetService("Players")
 local VIM = game:GetService("VirtualInputManager")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -41,6 +52,39 @@ task.spawn(function()
                 VIM:SendMouseButtonEvent(0, 0, 0, true, game, 0)
                 VIM:SendMouseButtonEvent(0, 0, 0, false, game, 0)
                 getgenv().attackMelee()
+            end)
+        end
+    end
+end)
+
+task.spawn(function()
+    repeat
+        task.wait()
+    until getgenv().attackFruit
+    while task.wait() do
+        if getgenv().FastAttackNew then
+            pcall(function()
+                local Player = Players.LocalPlayer
+                local Char = Player.Character
+                if not Char then return end
+                local Tool = Char:FindFirstChildOfClass("Tool")
+                if not Tool then return end
+                local WeaponName = Tool:GetAttribute("WeaponName")
+                if not WeaponData[WeaponName] then return end
+                if not getgenv()._FastAttackBackup.Hitbox then
+                    getgenv()._FastAttackBackup.Hitbox = WeaponData[WeaponName].HitboxMagnitude
+                end
+                for i, v in next, getupvalues(getgenv().attackFruit) do
+                    if typeof(v) == "number" then
+                        setupvalue(getgenv().attackFruit, i, 0)
+                    elseif typeof(v) == "boolean" then
+                        setupvalue(getgenv().attackFruit, i, false)
+                    end
+                end
+                WeaponData[WeaponName].HitboxMagnitude = 120
+                VIM:SendMouseButtonEvent(0, 0, 0, true, game, 0)
+                VIM:SendMouseButtonEvent(0, 0, 0, false, game, 0)
+                getgenv().attackFruit()
             end)
         end
     end
