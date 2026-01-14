@@ -2206,8 +2206,7 @@ QuestNeta = function()
 		[6] = PosQ
 	}
 end
-local v13 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyadr/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
-local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))();
+local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyadr/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
 local v15 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/AttackNguBeta%5BHiru%5D.lua"))();
 L_1_[16] = (loadstring(game:HttpGet(L_1_[2]({
 	"https://raw.githubus",
@@ -2218,7 +2217,7 @@ L_1_[16] = (loadstring(game:HttpGet(L_1_[2]({
 L_1_[38] = L_1_[16]:MakeWindow({
 	["Title"] = "Duy Adr Hub";
 	["SubTitle"] = "Duy Android",
-	["SaveFolder"] = "redz library V5.json"
+	["SaveFolder"] = "Duy Android library V5.json"
 })
 L_1_[87] = Instance["new"]("ScreenGui")
 L_1_[87]["Name"] = "ControlGUI"
