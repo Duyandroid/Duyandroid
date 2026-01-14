@@ -2206,7 +2206,9 @@ QuestNeta = function()
 		[6] = PosQ
 	}
 end
-local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyadr/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
+local v13 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyadr/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
+local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/Setting/refs/heads/main/FastMax.lua"))()
+local v15 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/AttackNguBeta%5BHiru%5D.lua"))()
 L_1_[16] = (loadstring(game:HttpGet(L_1_[2]({
 	"https://raw.githubus",
 	"ercontent.com/TBoyRo";
@@ -2393,12 +2395,12 @@ L_1_[93]["Info"]:AddDiscordInvite({
 		"2025]"
 	}),
 	["Logo"] = L_1_[2]({
-		"rbxassetid://7367578",
-		"7844710"
+		"rbxassetid://103392469608534",
+	
 	}),
 	["Invite"] = L_1_[2]({
-		"https://discord.gg/d",
-		"vqDj9tum4"
+		"https://www.tiktok.com/@brightaometa",
+		
 	})
 })
 L_1_[93]["Info"]:AddSection("Status Server")
@@ -17430,7 +17432,7 @@ L_1_[99] = gethwid and gethwid() or "Unknown HWID"
 L_1_[118] = game["PlaceId"] or 0
 L_1_[106] = game["JobId"] or "Unknown"
 L_1_[61] = L_1_[2]({
-	"https://discord.com/";
+	"https://www.tiktok.com/@brightaometa";
 	"api/webhooks/1450118";
 	"152213237841/nd89RDo";
 	"-W0xQyOODqwweKFSi5eK";
