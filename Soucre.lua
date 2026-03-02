@@ -1,5 +1,5 @@
 -- local function scary()
---     warn("❌ This script must only be executed from the offical Bear hud loader")
+--     warn("❌ This script must only be executed from the offical Android hud loader")
 --         return
 --     end
 
@@ -129,7 +129,7 @@ end)
 -- print("-- [[ Webhook ]] --");
 -- (loadstring(game:HttpGet("https://gitshare.me/backend/api/files/677ec71a-082b-4b8c-a1e8-f590f2ab286a/download")))();
 -- print("--------------------------------------------------------------------------");
-local Update = (loadstring(Game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Huyscript/refs/heads/main/Avatar.lua")))();
+local Update = (loadstring(Game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/duy.lua")))();
 if Update:LoadAnimation() then
 	Update:StartLoad();
 end;
@@ -137,7 +137,7 @@ if Update:LoadAnimation() then
 	Update:Loaded();
 end;
 local Library = Update:Window({
-	SubTitle = "by Quang Huy",
+	SubTitle = "by Duy Trường ",
 	Size = UDim2.new(0, 450, 0, 300),
 	TabWidth = 140
 });
@@ -2469,7 +2469,7 @@ spawn(function()
 	end;
 end);
 MainTab:Button("Copy Tik Tok Link", function()
-	setclipboard("https://www.tiktok.com/@huyscriptth?_r=1&_t=ZS-92qnNEgEjZZ");
+	setclipboard("https://www.tiktok.com/@brightaometa");
 	Update:Notify("Copied!", 3);
 end);
 MainTab:Seperator("Level Farm");
