@@ -25,11 +25,11 @@ local T1UIColor = {
     ["Placeholder Text Color"] = Color3.fromRGB(0, 170, 255),
     ["Title Text Color"] = Color3.fromRGB(0, 170, 255),
     
-    ["Background Main Color"] = Color3.fromRGB(0, 170, 255), 
-    ["Background 1 Color"] = Color3.fromRGB(0, 170, 255),
+    ["Background Main Color"] = Color3.fromRGB(0, 200, 255), 
+    ["Background 1 Color"] = Color3.fromRGB(0, 200, 255),
     ["Background 1 Transparency"] = 0.05,
-    ["Background 2 Color"] = Color3.fromRGB(0, 170, 255),
-    ["Background 3 Color"] = Color3.fromRGB(0, 170, 255),
+    ["Background 2 Color"] = Color3.fromRGB(0, 200, 255),
+    ["Background 3 Color"] = Color3.fromRGB(0, 200, 255),
     ["Background Image"] = "rbxassetid://136271563535852",
     
     ["Page Selected Color"] = Color3.fromRGB(0, 170, 255),
