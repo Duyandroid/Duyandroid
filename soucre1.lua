@@ -3681,7 +3681,7 @@ local ui_loaded = false
 
 -- Thử load UI từ nhiều nguồn khác nhau
 local ui_urls = {
-    "https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/tab.lua",
+    "https://raw.githubusercontent.com/TranGiaHao-source/HaoModHub/refs/heads/main/raw.txt",
     "https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib",
     "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Unnamed",
 }
@@ -3878,19 +3878,19 @@ l_ImageButton_0.MouseButton1Click:Connect(function()
         v466:Minimize(true)
     end
 end)
-local v484 = v466:MakeTab({"Thông Tin | Info","rbxassetid://116828114235759"})
-local v485 = v466:MakeTab({"Farming","rbxassetid://116828114235759"})
-local v486 = v466:MakeTab({"Auto Fishing","rbxassetid://116828114235759"})
-local v487 = v466:MakeTab({"Quest | Items","rbxassetid://116828114235759"})
-local v488 = v466:MakeTab({"Volcano Dojo","rbxassetid://116828114235759"})
-local v489 = v466:MakeTab({"Sea Event","rbxassetid://116828114235759"})
-local v490 = v466:MakeTab({"Race V4","rbxassetid://116828114235759"})
-local v491 = v466:MakeTab({"Raid Fruits","rbxassetid://116828114235759"})
-local v492 = v466:MakeTab({"Fruits | Check Stock","rbxassetid://116828114235759"})
-local v493 = v466:MakeTab({"Teleport","rbxassetid://116828114235759"})
-local v494 = v466:MakeTab({"PvP,Player","rbxassetid://116828114235759"})
-local v495 = v466:MakeTab({"Shop","rbxassetid://116828114235759"})
-local v496 = v466:MakeTab({"Settings","rbxassetid://116828114235759"})
+local v484 = v466:MakeTab({"Thông Tin | Info","rbxassetid://136271563535852"})
+local v485 = v466:MakeTab({"Farming","rbxassetid://136271563535852"})
+local v486 = v466:MakeTab({"Auto Fishing","rbxassetid://136271563535852"})
+local v487 = v466:MakeTab({"Quest | Items","rbxassetid://136271563535852"})
+local v488 = v466:MakeTab({"Volcano Dojo","rbxassetid://136271563535852"})
+local v489 = v466:MakeTab({"Sea Event","rbxassetid://136271563535852"})
+local v490 = v466:MakeTab({"Race V4","rbxassetid://136271563535852"})
+local v491 = v466:MakeTab({"Raid Fruits","rbxassetid://136271563535852"})
+local v492 = v466:MakeTab({"Fruits | Check Stock","rbxassetid://136271563535852"})
+local v493 = v466:MakeTab({"Teleport","rbxassetid://136271563535852"})
+local v494 = v466:MakeTab({"PvP,Player","rbxassetid://136271563535852"})
+local v495 = v466:MakeTab({"Shop","rbxassetid://136271563535852"})
+local v496 = v466:MakeTab({"Settings","rbxassetid://136271563535852"})
 v484:AddDiscordInvite({
     Name = "Tham Gia Discord",
     Description = "Link Sever Discord",
