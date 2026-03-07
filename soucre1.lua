@@ -3681,7 +3681,7 @@ local ui_loaded = false
 
 -- Thử load UI từ nhiều nguồn khác nhau
 local ui_urls = {
-    "https://raw.githubusercontent.com/TranGiaHao-source/HaoModHub/refs/heads/main/raw.txt",
+    "https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/tab.lua",
     "https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib",
     "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Unnamed",
 }
@@ -3727,7 +3727,7 @@ if not ui_loaded then
     
     -- Tạo UI đơn giản thay thế
     local sg = Instance.new("ScreenGui")
-    sg.Name = "HaoModBackupUI"
+    sg.Name = "DuyTrườngBackupUI"
     sg.Parent = game:GetService("CoreGui")
     sg.ResetOnSpawn = false
     
@@ -3800,7 +3800,6 @@ if not ui_loaded then
   
   3. Kiểm tra kết nối internet
   
-  4. Liên hệ HaoMod để hỗ trợ
 
 ⚠️ Script KHÔNG THỂ hoạt động với KRNL!
 ]]
