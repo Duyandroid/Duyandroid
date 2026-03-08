@@ -1,4 +1,3 @@
--- source shared by araujozwx 
 
 if getgenv().Nousigi then 
 	if game.CoreGui:FindFirstChild("Night Mystic GUI") then
@@ -15,40 +14,40 @@ local DisableAnimation = game.Players.LocalPlayer.PlayerGui:FindFirstChild('Touc
 
 local T1UIColor = {
     ["Border Color"] = Color3.fromRGB(50, 50, 50),
-    ["Click Effect Color"] = Color3.fromRGB(0, 170, 255),
-    ["Setting Icon Color"] = Color3.fromRGB(0, 170, 255),
+    ["Click Effect Color"] = Color3.fromRGB(255, 105, 180),
+    ["Setting Icon Color"] = Color3.fromRGB(200, 200, 200),
     ["Logo Image"] = "rbxassetid://136271563535852",
-    ["Search Icon Color"] = Color3.fromRGB(0, 170, 255),
-    ["Search Icon Highlight Color"] = Color3.fromRGB(0, 170, 255),
-    ["GUI Text Color"] = Color3.fromRGB(0, 170, 255),
-    ["Text Color"] = Color3.fromRGB(0, 170, 255),
-    ["Placeholder Text Color"] = Color3.fromRGB(0, 170, 255),
-    ["Title Text Color"] = Color3.fromRGB(0, 0, 255),
+    ["Search Icon Color"] = Color3.fromRGB(255, 105, 180),
+    ["Search Icon Highlight Color"] = Color3.fromRGB(255, 140, 200),
+    ["GUI Text Color"] = Color3.fromRGB(240, 240, 240),
+    ["Text Color"] = Color3.fromRGB(240, 240, 240),
+    ["Placeholder Text Color"] = Color3.fromRGB(100, 100, 100),
+    ["Title Text Color"] = Color3.fromRGB(255, 255, 255),
     
-    ["Background Main Color"] = Color3.fromRGB(0, 200, 255), 
-    ["Background 1 Color"] = Color3.fromRGB(0, 200, 255),
+    ["Background Main Color"] = Color3.fromRGB(15, 15, 15), 
+    ["Background 1 Color"] = Color3.fromRGB(22, 22, 22),
     ["Background 1 Transparency"] = 0.05,
-    ["Background 2 Color"] = Color3.fromRGB(0, 200, 255),
-    ["Background 3 Color"] = Color3.fromRGB(0, 200, 255),
-    ["Background Image"] = "rbxassetid://136271563535852",
+    ["Background 2 Color"] = Color3.fromRGB(30, 30, 30),
+    ["Background 3 Color"] = Color3.fromRGB(25, 25, 25),
+    ["Background Image"] = "",
     
-    ["Page Selected Color"] = Color3.fromRGB(0, 170, 255),
+    ["Page Selected Color"] = Color3.fromRGB(255, 105, 180),
     ["Section Text Color"] = Color3.fromRGB(255, 255, 255),
-    ["Section Underline Color"] = Color3.fromRGB(0, 170, 255),
+    ["Section Underline Color"] = Color3.fromRGB(255, 105, 180),
     ["Toggle Border Color"] = Color3.fromRGB(70, 70, 70),
-    ["Toggle Checked Color"] = Color3.fromRGB(0, 170, 255),
+    ["Toggle Checked Color"] = Color3.fromRGB(255, 105, 180),
     ["Toggle Desc Color"] = Color3.fromRGB(180, 180, 180),
     
     ["Button Color"] = Color3.fromRGB(35, 35, 35),
     ["Label Color"] = Color3.fromRGB(28, 28, 28),
-    ["Dropdown Icon Color"] = Color3.fromRGB(0, 170, 255),
-    ["Dropdown Selected Color"] = Color3.fromRGB(0, 170, 255),
+    ["Dropdown Icon Color"] = Color3.fromRGB(255, 105, 180),
+    ["Dropdown Selected Color"] = Color3.fromRGB(255, 105, 180),
     ["Dropdown Selected Check Color"] = Color3.fromRGB(255, 255, 255),
     
-    ["Textbox Highlight Color"] = Color3.fromRGB(0, 0, 255),
-    ["Box Highlight Color"] = Color3.fromRGB(0, 170, 255),
+    ["Textbox Highlight Color"] = Color3.fromRGB(255, 105, 180),
+    ["Box Highlight Color"] = Color3.fromRGB(255, 105, 180),
     ["Slider Line Color"] = Color3.fromRGB(45, 45, 45),
-    ["Slider Highlight Color"] = Color3.fromRGB(0, 170, 255),
+    ["Slider Highlight Color"] = Color3.fromRGB(255, 105, 180),
     
     ["Tween Animation 1 Speed"] = DisableAnimation and 0 or 0.25,
     ["Tween Animation 2 Speed"] = DisableAnimation and 0 or 0.5,
@@ -192,7 +191,7 @@ local defaultTweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDi
 -- UIStroke cho mainButton
 local UIStroke = Instance.new("UIStroke")
 UIStroke.Parent = mainButton
-UIStroke.Color = Color3.fromRGB(0, 170, 255)
+UIStroke.Color = Color3.fromRGB(255, 105, 180)
 UIStroke.Thickness = 1.5
 UIStroke.Transparency = 0.7
 
