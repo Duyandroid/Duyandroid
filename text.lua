@@ -23,7 +23,7 @@ local T1UIColor = {
     ["GUI Text Color"] = Color3.fromRGB(0, 170, 255),
     ["Text Color"] = Color3.fromRGB(0, 170, 255),
     ["Placeholder Text Color"] = Color3.fromRGB(0, 170, 255),
-    ["Title Text Color"] = Color3.fromRGB(0, 170, 255),
+    ["Title Text Color"] = Color3.fromRGB(0, 0, 255),
     
     ["Background Main Color"] = Color3.fromRGB(0, 200, 255), 
     ["Background 1 Color"] = Color3.fromRGB(0, 200, 255),
@@ -45,7 +45,7 @@ local T1UIColor = {
     ["Dropdown Selected Color"] = Color3.fromRGB(0, 170, 255),
     ["Dropdown Selected Check Color"] = Color3.fromRGB(255, 255, 255),
     
-    ["Textbox Highlight Color"] = Color3.fromRGB(0, 170, 255),
+    ["Textbox Highlight Color"] = Color3.fromRGB(0, 0, 255),
     ["Box Highlight Color"] = Color3.fromRGB(0, 170, 255),
     ["Slider Line Color"] = Color3.fromRGB(45, 45, 45),
     ["Slider Highlight Color"] = Color3.fromRGB(0, 170, 255),
