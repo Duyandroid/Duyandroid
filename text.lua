@@ -31,11 +31,11 @@ local T1UIColor = {
     ["Background 3 Color"] = Color3.fromRGB(25, 25, 25),
     ["Background Image"] = "",
     
-    ["Page Selected Color"] = Color3.fromRGB(255, 105, 180),
+    ["Page Selected Color"] = Color3.fromRGB(135, 206, 235),
     ["Section Text Color"] = Color3.fromRGB(255, 255, 255),
-    ["Section Underline Color"] = Color3.fromRGB(255, 105, 180),
+    ["Section Underline Color"] = Color3.fromRGB(135, 206, 235),
     ["Toggle Border Color"] = Color3.fromRGB(70, 70, 70),
-    ["Toggle Checked Color"] = Color3.fromRGB(255, 105, 180),
+    ["Toggle Checked Color"] = Color3.fromRGB(135, 206, 235),
     ["Toggle Desc Color"] = Color3.fromRGB(180, 180, 180),
     
     ["Button Color"] = Color3.fromRGB(35, 35, 35),
