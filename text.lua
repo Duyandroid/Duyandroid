@@ -136,7 +136,7 @@ local player = Players.LocalPlayer
 local ToggleScreenGui = Instance.new("ScreenGui")
 ToggleScreenGui.Parent = game:GetService("CoreGui")
 ToggleScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ToggleScreenGui.Name = "NazuXWindowsToggleUltimate"
+ToggleScreenGui.Name = "DuyTrWindowsToggleUltimate"
 
 -- SERVICES
 local CoreGui = game:GetService("CoreGui")
@@ -399,7 +399,7 @@ Library.DestroyUI = function()
         end
     end
     
-    local toggleGui = game.CoreGui:FindFirstChild("NazuXWindowsToggleUltimate")
+    local toggleGui = game.CoreGui:FindFirstChild("DuyTrWindowsToggleUltimate")
     if toggleGui then
         toggleGui:Destroy()
     end
@@ -821,7 +821,7 @@ function Library:CreateWindow(Setting)
 	SearchIcon.BackgroundTransparency = 1
 	SearchIcon.Position = UDim2.new(0.5, 0, 0.5, 0)
 	SearchIcon.Size = UDim2.new(0, 16, 0, 16)
-	SearchIcon.Image = "rbxassetid://8154282545"
+	SearchIcon.Image = "rbxassetid://"
 	SearchIcon.ImageColor3 = Color3.fromRGB(240, 240, 230)
 
     SearchBox.Name = "SearchBox"
