@@ -40,14 +40,14 @@ local T1UIColor = {
     
     ["Button Color"] = Color3.fromRGB(35, 35, 35),
     ["Label Color"] = Color3.fromRGB(28, 28, 28),
-    ["Dropdown Icon Color"] = Color3.fromRGB(255, 105, 180),
-    ["Dropdown Selected Color"] = Color3.fromRGB(255, 105, 180),
+    ["Dropdown Icon Color"] = Color3.fromRGB(135, 206, 235),
+    ["Dropdown Selected Color"] = Color3.fromRGB(135, 206, 235),
     ["Dropdown Selected Check Color"] = Color3.fromRGB(255, 255, 255),
     
-    ["Textbox Highlight Color"] = Color3.fromRGB(255, 105, 180),
-    ["Box Highlight Color"] = Color3.fromRGB(255, 105, 180),
+    ["Textbox Highlight Color"] = Color3.fromRGB(135, 206, 235),
+    ["Box Highlight Color"] = Color3.fromRGB(135, 206, 235),
     ["Slider Line Color"] = Color3.fromRGB(45, 45, 45),
-    ["Slider Highlight Color"] = Color3.fromRGB(255, 105, 180),
+    ["Slider Highlight Color"] = Color3.fromRGB(135, 206, 235),
     
     ["Tween Animation 1 Speed"] = DisableAnimation and 0 or 0.25,
     ["Tween Animation 2 Speed"] = DisableAnimation and 0 or 0.5,
