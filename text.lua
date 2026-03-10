@@ -14,10 +14,10 @@ local DisableAnimation = game.Players.LocalPlayer.PlayerGui:FindFirstChild('Touc
 
 local T1UIColor = {
     ["Border Color"] = Color3.fromRGB(50, 50, 50),
-    ["Click Effect Color"] = Color3.fromRGB(255, 105, 180),
+    ["Click Effect Color"] = Color3.fromRGB(135, 206, 235),
     ["Setting Icon Color"] = Color3.fromRGB(200, 200, 200),
     ["Logo Image"] = "rbxassetid://136271563535852",
-    ["Search Icon Color"] = Color3.fromRGB(255, 105, 180),
+    ["Search Icon Color"] = Color3.fromRGB(135, 206, 235),
     ["Search Icon Highlight Color"] = Color3.fromRGB(255, 140, 200),
     ["GUI Text Color"] = Color3.fromRGB(240, 240, 240),
     ["Text Color"] = Color3.fromRGB(240, 240, 240),
@@ -191,7 +191,7 @@ local defaultTweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDi
 -- UIStroke cho mainButton
 local UIStroke = Instance.new("UIStroke")
 UIStroke.Parent = mainButton
-UIStroke.Color = Color3.fromRGB(255, 105, 180)
+UIStroke.Color = Color3.fromRGB(135, 206, 235)
 UIStroke.Thickness = 1.5
 UIStroke.Transparency = 0.7
 
