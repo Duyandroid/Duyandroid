@@ -7,65 +7,9 @@ local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
-		task.wait(0.1)
-local function CreateStarEffect(ParentFrame)
-    local StarContainer = Instance.new("Frame")
-    StarContainer.Name = "StarContainer"
-    StarContainer.Size = UDim2.new(1, 0, 1, 0)
-    StarContainer.BackgroundTransparency = 1
-    StarContainer.ClipsDescendants = true -- Để sao không bay ra ngoài UI
-    StarContainer.ZIndex = 1
-    StarContainer.Parent = ParentFrame
 
-    local Stars = {}
-    for i = 1, 80 do -- Số lượng ngôi sao
-        local Star = Instance.new("Frame")
-        Star.Name = "Star"
-        Star.Size = UDim2.new(0, math.random(1, 2), 0, math.random(1, 2))
-        Star.Position = UDim2.new(math.random(), 0, math.random(), 0)
-        Star.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        Star.BorderSizePixel = 0
-        Star.BackgroundTransparency = math.random(2, 6) / 10
-        Star.Parent = StarContainer
-        
-        local Corner = Instance.new("UICorner")
-        Corner.CornerRadius = UDim.new(1, 0)
-        Corner.Parent = Star
-        
-        table.insert(Stars, {
-            Object = Star,
-            Speed = math.random(4, 12) / 10000 -- Tốc độ bay
-        })
-    end
-
-    -- Làm cho sao chuyển động
-    RunService.RenderStepped:Connect(function()
-        for _, StarData in pairs(Stars) do
-            local Star = StarData.Object
-            local NewX = Star.Position.X.Scale + StarData.Speed
-            if NewX > 1 then
-                NewX = -0.01
-                Star.Position = UDim2.new(NewX, 0, math.random(), 0)
-            else
-                Star.Position = UDim2.new(NewX, 0, Star.Position.Y.Scale, 0)
-            end
-        end
-    end)
-end
 local redzlib = {
-		Themes = {
-				Galaxy = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(10, 10, 35)), -- Xanh đen vũ trụ
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(35, 15, 60)), -- Tím huyền bí
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 10, 35))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(15, 15, 30),
-			["Color Stroke"] = Color3.fromRGB(255, 0, 85), -- VIỀN ĐỎ CAO CẤP
-			["Color Theme"] = Color3.fromRGB(255, 40, 60), -- Tông đỏ cho các nút
-			["Color Text"] = Color3.fromRGB(255, 255, 255),
-			["Color Dark Text"] = Color3.fromRGB(200, 200, 200)
-		},
+	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
@@ -101,7 +45,7 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(150, 0, 255),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		}		
+		}
 	},
 	Info = {
 		Version = "1.1.0"
@@ -109,7 +53,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Galaxy"
+		Theme = "Darker"
 	},
 	Settings = {},
 	Connection = {},
@@ -1149,7 +1093,7 @@ local GetFlag, SetFlag, CheckFlag do
 end
 
 local ScreenGui = Create("ScreenGui", CoreGui, {
-	Name = "Redz-Lib-LongHiHi-V2",
+	Name = "redz Library V5",
 }, {
 	Create("UIScale", {
 		Scale = UIScale,
@@ -1455,44 +1399,6 @@ function redzlib:SetScale(NewScale)
 	NewScale = ViewportSize.Y / math.clamp(NewScale, 300, 2000)
 	UIScale, ScreenGui.Scale.Scale = NewScale, NewScale
 end
-local function CreateSpaceStars(Parent)
-    local StarContainer = Instance.new("Frame")
-    StarContainer.Name = "StarContainer"
-    StarContainer.Size = UDim2.new(1, 0, 1, 0)
-    StarContainer.BackgroundTransparency = 1
-    StarContainer.ClipsDescendants = true
-    StarContainer.ZIndex = 1
-    StarContainer.Parent = Parent
-
-    local Stars = {}
-    for i = 1, 65 do
-        local Star = Instance.new("Frame")
-        Star.Size = UDim2.new(0, math.random(1, 2), 0, math.random(1, 2))
-        Star.Position = UDim2.new(math.random(), 0, math.random(), 0)
-        Star.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        Star.BackgroundTransparency = math.random(3, 7) / 10
-        Star.BorderSizePixel = 0
-        Star.Parent = StarContainer
-        
-        local Corner = Instance.new("UICorner")
-        Corner.CornerRadius = UDim.new(1, 0)
-        Corner.Parent = Star
-        
-        table.insert(Stars, {obj = Star, speed = math.random(6, 18) / 10000})
-    end
-
-    RunService.RenderStepped:Connect(function()
-        for _, s in pairs(Stars) do
-            local newX = s.obj.Position.X.Scale + s.speed
-            if newX > 1 then 
-                newX = -0.02 
-                s.obj.Position = UDim2.new(newX, 0, math.random(), 0)
-            else
-                s.obj.Position = UDim2.new(newX, 0, s.obj.Position.Y.Scale, 0)
-            end
-        end
-    end)
-end
 
 function redzlib:MakeWindow(Configs)
 	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
@@ -1517,29 +1423,15 @@ function redzlib:MakeWindow(Configs)
 	end;LoadFile()
 	
 	local UISizeX, UISizeY = unpack(redzlib.Save.UISize)
-	-- ... (Code cũ của ông tạo MainFrame)
 	local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
 		Size = UDim2.fromOffset(UISizeX, UISizeY),
 		Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
 		BackgroundTransparency = 0.03,
 		Name = "Hub"
 	}), "Main")
-    
-    -- DÁN 2 ĐOẠN NÀY VÀO ĐÂY --
-    CreateSpaceStars(MainFrame) -- Tạo hiệu ứng dấu chấm chuyển động
-    
-    local Stroke = Instance.new("UIStroke") -- Tạo viền đỏ cao cấp
-    Stroke.Thickness = 1.7
-    Stroke.Color = Color3.fromRGB(255, 0, 85) -- Màu đỏ rực
-    Stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    Stroke.Parent = MainFrame
-    ---------------------------
-
 	Make("Gradient", MainFrame, {
 		Rotation = 45
 	})MakeDrag(MainFrame)
--- ... (Code phía dưới giữ nguyên)
-
 	
 	local MainCorner = Make("Corner", MainFrame)
 	
@@ -2115,7 +2007,7 @@ function redzlib:MakeWindow(Configs)
 				Size = UDim2.new(0, 12, 0, 12),
 				Position = UDim2.new(0, 0, 0.5),
 				AnchorPoint = Vector2.new(0, 0.5),
-				BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				BackgroundColor3 = Theme["Color Theme"]
 			}), "Theme")Make("Corner", Toggle, UDim.new(0.5, 0))
 			
 			local WaitClick
