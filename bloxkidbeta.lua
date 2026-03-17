@@ -91,7 +91,7 @@ local function NotificacaoNightMystic(titulo, mensagem)
         Title.Font = Enum.Font.GothamBold
         Title.Text = titulo
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-        Title.TextSize = 14
+        Title.TextSize = 16
         Title.TextXAlignment = Enum.TextXAlignment.Left
         Title.TextTruncate = Enum.TextTruncate.AtEnd
 
@@ -104,7 +104,7 @@ local function NotificacaoNightMystic(titulo, mensagem)
         Msg.Font = Enum.Font.GothamMedium
         Msg.Text = mensagem
         Msg.TextColor3 = Color3.fromRGB(200, 200, 200)
-        Msg.TextSize = 12
+        Msg.TextSize = 16
         Msg.TextXAlignment = Enum.TextXAlignment.Left
         Msg.TextYAlignment = Enum.TextYAlignment.Top
         Msg.TextWrapped = true
