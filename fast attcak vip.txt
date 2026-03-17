@@ -8,7 +8,7 @@ local function GetBladeHits()
     for _, part in pairs({game.Workspace.Enemies, game.Workspace.Characters}) do
         for _, v in pairs(part:GetChildren()) do
             if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Head") and v:FindFirstChild("Humanoid") then
-                if GetDistance(v.HumanoidRootPart) < 60 then
+                if GetDistance(v.HumanoidRootPart) < 0 then
                     table.insert(targets, v)
                 end
             end
