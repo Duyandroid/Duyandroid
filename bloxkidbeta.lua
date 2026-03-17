@@ -22,7 +22,7 @@ local function NotificacaoNightMystic(titulo, mensagem)
         local ScreenGui = CoreGui:FindFirstChild("NM_Pree_Notify")
         if not ScreenGui then
             ScreenGui = Instance.new("ScreenGui")
-            ScreenGui.Name = "NM_Premium_Notify"
+            ScreenGui.Name = "NM_Pree_Notify"
             ScreenGui.ResetOnSpawn = false
             ScreenGui.DisplayOrder = 9999
             ScreenGui.Parent = CoreGui
@@ -164,16 +164,16 @@ local function NotificacaoNightMystic(titulo, mensagem)
     end)
     
     if not success then
-        warn("[Duy Trường] Erro ao exibir notificação")
+        warn("[Duy Trường]")
     end
 end
 
 -- ==========================================
 -- GỌI THỬ ĐỂ TEST:
 -- ==========================================
-NotificacaoNightMystic("Duy Trường", "1.0")
-task.wait(0.8)
-NotificacaoNightMystic("Duy Trường", "1.0")
+NotificacaoNightMystic("Script làm by Duy Trường", "V 1.0")
+task.wait(0.1)
+NotificacaoNightMystic("Script làm by Duy Trường", "V 1.0")
 
 local HttpService = Services.HttpService
 local FolderName = "setting.json"
