@@ -17,7 +17,7 @@ local function NotificacaoNightMystic(titulo, mensagem)
         local duration = 5
 
         -- 1. HỆ THỐNG XẾP CHỒNG (Tạo 1 lần duy nhất)
-        local ScreenGui = CoreGui:FindFirstChild("NM_Premium_Notify")
+        local ScreenGui = CoreGui:FindFirstChild("NM_Pree_Notify")
         if not ScreenGui then
             ScreenGui = Instance.new("ScreenGui")
             ScreenGui.Name = "NM_Premium_Notify"
@@ -45,7 +45,7 @@ local function NotificacaoNightMystic(titulo, mensagem)
 
         -- 2. TẠO KHUNG THÔNG BÁO CAO CẤP
         local Main = Instance.new("CanvasGroup")
-        Main.Name = "PremiumNoti"
+        Main.Name = "PreeNoti"
         Main.Parent = Holder
         Main.Size = UDim2.new(1, 0, 0, 80)
         Main.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
@@ -2934,9 +2934,9 @@ local function performClick()
     getgenv().AutoClickShootSettings.LastClickTime = currentTime
 end
 
-local redzlib = loadstring(game:HttpGet("https://pastefy.app/W6Xz5utn/raw"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/text.lua"))()
 local Window = redzlib:MakeWindow({
-    Title = "Duy Trường V4 [Beta]",
+    Title = "Duy Trường V1 [Free]",
     SubTitle = "Blox kid",
     SaveFolder = true,
     Image = ""
