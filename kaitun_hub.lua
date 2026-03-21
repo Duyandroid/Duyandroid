@@ -8,7 +8,7 @@ local plr          = Players.LocalPlayer
 
 local SERVER  = ""
 local DISCORD = ""
-local GETKEY  = SERVER.."4"
+local GETKEY  =""
 
 -- HWID
 local function getHWID()
