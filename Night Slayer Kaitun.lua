@@ -1,5 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_ataack.lua"))();
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fast%20attcak%20vip.txt"))();
+
 local L_1_ = {}
 L_1_[3] = table["concat"]
 if not game:IsLoaded() then
