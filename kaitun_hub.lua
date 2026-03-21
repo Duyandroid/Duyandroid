@@ -6,9 +6,9 @@ local HttpService  = game:GetService("HttpService")
 local SoundService = game:GetService("SoundService")
 local plr          = Players.LocalPlayer
 
-local SERVER  = ""
+local SERVER  = "free"
 local DISCORD = ""
-local GETKEY  =""
+local GETKEY  = SERVER.."free"
 
 -- HWID
 local function getHWID()
@@ -146,7 +146,7 @@ IR.BackgroundColor3=C.inp; IR.BorderSizePixel=0; IR.ZIndex=4; IR.Parent=Panel
 local _=Instance.new("UICorner"); _.CornerRadius=UDim.new(0,9); _.Parent=IR
 local _=Instance.new("UIStroke"); _.Color=C.pD; _.Thickness=1; _.Parent=IR
 
-local KB=Instance.new("TextBox")
+local KB=Instance.new("")
 KB.Size=UDim2.new(1,-76,0,36); KB.Position=UDim2.new(0,0,0,0)
 KB.BackgroundTransparency=1; KB.Text=""
 KB.PlaceholderText="Nhap key..."; KB.PlaceholderColor3=Color3.fromRGB(75,24,52)
@@ -174,7 +174,7 @@ Stat.ZIndex=4; Stat.Parent=Panel
 mkDiv(222)
 
 -- GET KEY BUTTON  y=230  h=52
-local GK=Instance.new("TextButton")
+local GK=Instance.new("")
 GK.Size=UDim2.new(1,-28,0,52); GK.Position=UDim2.new(0,14,0,230)
 GK.BackgroundColor3=Color3.fromRGB(19,6,30); GK.Text=""
 GK.AutoButtonColor=false; GK.BorderSizePixel=0; GK.ZIndex=4; GK.Parent=Panel
