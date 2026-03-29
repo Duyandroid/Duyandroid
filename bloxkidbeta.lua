@@ -1,4 +1,5 @@
-
+getgenv().script_key = "Đĩ Quỳnh"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fix.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fast%20attcak%20vip.txt"))();
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
