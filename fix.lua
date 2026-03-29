@@ -7,7 +7,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Duration = 15
 })
 if table.find(TablePlace,game.PlaceId) then
-shared.LoaderTitle = "";
+shared.LoaderTitle = "Duy Trường";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
