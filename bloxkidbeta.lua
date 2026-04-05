@@ -1,6 +1,5 @@
 getgenv().script_key = ""
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fix.lua"))();
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/FPS%20B%E1%BA%A3y%20M%C3%A0u.lua"))();
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
         local service = game:GetService(serviceName)
