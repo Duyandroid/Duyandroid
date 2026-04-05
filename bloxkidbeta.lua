@@ -1,5 +1,5 @@
-getgenv().script_key = ""
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fix.lua"))();
+getgenv().script_key = "1"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fix.lua"))()
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
         local service = game:GetService(serviceName)
@@ -173,7 +173,6 @@ end
 -- ==========================================
 NotificacaoNightMystic("Script làm by Duy Trường", "V 1.0")
 task.wait(0.1)
-NotificacaoNightMystic("Script làm by Duy Trường", "V 1.0")
 
 local HttpService = Services.HttpService
 local FolderName = "setting.json"
