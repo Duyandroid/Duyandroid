@@ -1,5 +1,5 @@
 -- Cài đặt team và khởi tạo biến
-getgenv().team = "Marines" -- Pirates
+getgenv().team = "pirates" -- Pirates
 
 -- Đợi game tải hoàn chỉnh
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
@@ -151,7 +151,7 @@ local World1, World2, World3 = false, false, false
 if game.PlaceId == 7449423635 then
     World3 = true
 else
-    game.Players.LocalPlayer:Kick("Chỉ hỗ trợ BF Sea 3")
+    game.Players.LocalPlayer:("Chỉ hỗ trợ BF Sea 3")
     return
 end 
 
