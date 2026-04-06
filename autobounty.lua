@@ -146,12 +146,12 @@ _G.TotalEarn = 0  -- Tổng số tiền kiếm được
 _G.Time = 0  -- Thời gian hoạt động
 
 -- Định nghĩa thế giới và cấu hình đảo
-local World1, World2, World3 = false, false, false
+local World1, World2, World3 = true,true,true
 
 if game.PlaceId == 7449423635 then
     World3 = true
 else
-    game.Players.LocalPlayer:("Chỉ hỗ trợ BF Sea 3")
+    game.Players.LocalPlayer:Kick("Chỉ hỗ trợ BF Sea 3")
     return
 end 
 
