@@ -2949,8 +2949,8 @@ local MinimizeButton = Window:AddMinimizeButton({
         BackgroundTransparency = 1,
         Name = "Duy Trường" -- Đặt tên đúng yêu cầu
     },
-    Size = UDim2.new(0, 30, 0, 30), -- Size 45
-    Corner = { CornerRadius = UDim.new(0, 5) }, -- Bo tròn
+    Size = UDim2.new(0, 20, 0, 20), -- Size 20
+    Corner = { CornerRadius = UDim.new(0, 5) }, -- vuông góc tròn
 })
 
 ------ Tab
