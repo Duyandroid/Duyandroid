@@ -2623,10 +2623,10 @@ end
 
 local AttackDelays = {
     ["Normal Attack"] = 0.25,
-    ["Fast Attack"] = 0.15,
+    ["Fast Attack"] = 0.10,
     ["Super Attack"] = 0.05,
-    [" Attack"] = 0.1,
-    ["Super ult Attack"] = 0.01,
+    ["Ultra Attack"] = 0.1,
+    ["Ultimate Attack"] = 0.01,
 }
 
 local function StopAllAttacks()
@@ -2813,7 +2813,7 @@ getgenv().GunAuraSettings = {
     GunRange = 500,
     CurrentTarget = nil,
     TargetType = "All",
-    GunEnabled = true,
+    GunEnabled = false,
     FireRate = 0.01,
 }
 
@@ -11834,7 +11834,7 @@ v14:AddToggle({
                 local data = MeleeCoords[SelectedMelee]
                 if not data or not data.Pos then
                     redzlib:Notify({
-                        Title = "Duy Trường Hub",
+                        Title = "Duy Trường",
                         Message = "Lỗi: Không tìm thấy toạ độ cho Melee này ở Sea hiện tại!",
                         Duration = 3
                     })
@@ -11860,7 +11860,7 @@ v14:AddToggle({
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem", data.Key)
                         
                         redzlib:Notify({
-                            Title = "Duy Trường Hub",
+                            Title = "Duy Trường",
                             Message = "Đã mua: " .. SelectedMelee,
                             Duration = 2
                         })
@@ -12216,7 +12216,7 @@ v14:AddButton({
 v14:AddButton({
     Name = "Random Race 3,000F",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Black136271563535852dReward", "Reroll", "1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward", "Reroll", "1")
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward", "Reroll", "2")
         redzlib:Notify({Title = "Race", Message = "Đã Random Race", Duration = 2})
     end
