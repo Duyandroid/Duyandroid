@@ -200,7 +200,7 @@ UICornerBtnHide.CornerRadius = UDim.new(1, 0)
 
 local btnStroke = Instance.new("UIStroke")
 btnStroke.Parent = btnHide
-btnStroke.Color = Color3.fromRGB(0, 80, 200)
+btnStroke.Color = Color3.fromRGB()
 btnStroke.Thickness = 2
 
 local btnHideFrame = Instance.new('Frame', btnHide)
@@ -550,7 +550,7 @@ function Library:CreateWindow(Setting)
 	maingui.ImageColor3 = getgenv().UIColor["Border Color"]
 	maingui.ImageTransparency = 1
 
-	maingui.ImageColor3 = Color3.fromRGB(0, 80, 200)
+	maingui.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
 	MainContainer = Instance.new("ImageLabel")
 	MainContainer.Name = "MainContainer"
@@ -560,7 +560,7 @@ function Library:CreateWindow(Setting)
 
 	local uistr = Instance.new("UIStroke", MainContainer);
 	uistr.Thickness = 1;
-	uistr.Color = Color3.fromRGB(0, 80, 200);
+	uistr.Color = Color3.fromRGB(255, 255, 255);
 
 
 	getgenv().ReadyForGuiLoaded = true
