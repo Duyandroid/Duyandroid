@@ -189,7 +189,7 @@ btnHide.BackgroundTransparency = 0
 btnHide.AnchorPoint = Vector2.new(0, 1)
 btnHide.Size = UDim2.new(0, 60, 0, 60)
 btnHide.Position = UDim2.new(0, 15, 1, -15)
-btnHide.Image = "rbxassetid://91657962282669"
+btnHide.Image = "rbxassetid://136271563535852"
 btnHide.ScaleType = Enum.ScaleType.Fit
 btnHide.ImageColor3 = Color3.fromRGB(255, 255, 255)
 btnHide.ClipsDescendants = true
@@ -3827,28 +3827,6 @@ InfoTab:AddButton({
 	end
 })
 
-InfoTab:AddSection("Credits")
-
-InfoTab:AddParagraph({
-	Title = "Owner",
-	Desc = "ᵏᵏ"
-})
-InfoTab:AddParagraph({
-	Title = "Devs",
-	Desc = "ᵏᵏ And SAAAAD"
-})
-InfoTab:AddParagraph({
-	Title = "Helpers",
-	Desc = "DSPK Anormal, Putz, e a Ketty"
-})
-InfoTab:AddParagraph({
-	Title = "Functions Script",
-	Desc = "Orchidx, DSPK Anormal"
-})
-InfoTab:AddParagraph({
-	Title = "",
-	Desc = ""
-})
 
 InfoTab:AddSection("Duy Trường Hub Version V1.1 Stable: 🟢")
 
@@ -4625,8 +4603,8 @@ _G.Settings = {
 		["Devil Fruit Z Skill"] = true,
 		["Devil Fruit X Skill"] = true,
 		["Devil Fruit C Skill"] = true,
-		["Devil Fruit V Skill"] = false,
-		["Devil Fruit F Skill"] = false,
+		["Devil Fruit V Skill"] = true,
+		["Devil Fruit F Skill"] = true,
 		["Melee Z Skill"] = true,
 		["Melee X Skill"] = true,
 		["Melee C Skill"] = true,
@@ -6242,7 +6220,7 @@ task.spawn(function()
 				hrp.Anchored = false;
 			end;
 			if hum.WalkSpeed <= 0 and not _G.EclipseAutoTyrant then
-				hum.WalkSpeed = 150;
+				hum.WalkSpeed = 16;
 			end;
 		end);
 	end;
