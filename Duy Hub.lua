@@ -1,13 +1,13 @@
-if getgenv().EclipseHub then 
-	if game.CoreGui:FindFirstChild("Eclipse Hub GUI") then
+if getgenv().DuyTruongHub then 
+	if game.CoreGui:FindFirstChild("DuyTruong Hub GUI") then
 		for i, v in ipairs(game.CoreGui:GetChildren()) do
-			if string.find(v.Name,  "Eclipse Hub") then
+			if string.find(v.Name,  "DuyTruong Hub") then
 				v:Destroy()
 			end
 		end
 	end
 end
-getgenv().EclipseHub = true
+getgenv().DuyTruongHub = true
 
 local executor = getexecutorname and getexecutorname() or identifyexecutor and identifyexecutor() or nil
 if executor then
@@ -49,7 +49,7 @@ local T1UIColor = {
     ["Border Color"] = Color3.fromRGB(50, 50, 50),
     ["Click Effect Color"] = Color3.fromRGB(0, 80, 200),
     ["Setting Icon Color"] = Color3.fromRGB(200, 200, 200),
-    ["Logo Image"] = "rbxassetid://91657962282669",
+    ["Logo Image"] = "rbxassetid://136271563535852",
     ["Notification Image"] = "rbxassetid://115125408886765",
     ["Search Icon Color"] = Color3.fromRGB(0, 80, 200),
     ["Search Icon Highlight Color"] = Color3.fromRGB(30, 100, 220),
@@ -160,7 +160,7 @@ end
 
 Library_Function.Gui = Instance.new('ScreenGui')
 Library_Function.Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.Gui.Name = 'Eclipse Hub GUI'
+Library_Function.Gui.Name = 'DuyTruong Hub GUI'
 Library_Function.Gui.Enabled = false
 
 getgenv().ReadyForGuiLoaded = false
@@ -176,11 +176,11 @@ end)
 
 Library_Function.NotiGui = Instance.new('ScreenGui')
 Library_Function.NotiGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.NotiGui.Name = 'Eclipse Hub Notification'
+Library_Function.NotiGui.Name = 'DuyTruong Hub Notification'
 
 Library_Function.HideGui = Instance.new('ScreenGui')
 Library_Function.HideGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.HideGui.Name = 'Eclipse Hub Btn'
+Library_Function.HideGui.Name = 'DuyTruong Hub Btn'
 
 
 local btnHide = Instance.new('ImageButton', Library_Function.HideGui)
@@ -219,9 +219,9 @@ imgHide.Position = UDim2.new(0.5, 0, 0.5, 0)
 
 Library.ToggleUI = function()
 	getgenv().UIToggled = not getgenv().UIToggled
-	if game.CoreGui:FindFirstChild("Eclipse Hub GUI") then
+	if game.CoreGui:FindFirstChild("DuyTruong Hub GUI") then
 		for a, b in ipairs(game.CoreGui:GetChildren()) do
-			if b.Name == "Eclipse Hub GUI" then
+			if b.Name == "DuyTruong Hub GUI" then
 				b.Enabled = getgenv().UIToggled
 			end
 		end
@@ -229,9 +229,9 @@ Library.ToggleUI = function()
 end
 
 Library.DestroyUI = function()
-	if game.CoreGui:FindFirstChild("Eclipse Hub GUI") then
+	if game.CoreGui:FindFirstChild("DuyTruong Hub GUI") then
 		for i, v in ipairs(game.CoreGui:GetChildren()) do
-			if string.find(v.Name, "Eclipse Hub") then
+			if string.find(v.Name, "DuyTruong Hub") then
 				v:Destroy()
 			end
 		end
@@ -239,9 +239,9 @@ Library.DestroyUI = function()
 end
 
 Library.DestroyUI = function()
-	if game.CoreGui:FindFirstChild("Eclipse Hub GUI") then
+	if game.CoreGui:FindFirstChild("DuyTruong Hub GUI") then
 		for i, v in ipairs(game.CoreGui:GetChildren()) do
-			if string.find(v.Name,  "Eclipse Hub") then
+			if string.find(v.Name,  "DuyTruong Hub") then
 				v:Destroy()
 			end
 		end
@@ -498,7 +498,7 @@ end
 
 
 function Library:CreateWindow(Setting)
-    local TitleNameMain = Setting.Title or "Eclipse Hub"
+    local TitleNameMain = Setting.Title or "Duy Trường Hub"
     getgenv().MainDesc = Setting.Desc or Setting.Subtitle or ""
     
     if Setting.Image then
@@ -618,7 +618,7 @@ function Library:CreateWindow(Setting)
 	TextLabelMain.TextWrapped = true
 	TextLabelMain.TextXAlignment = Enum.TextXAlignment.Center
 	TextLabelMain.TextColor3 = getgenv().UIColor["GUI Text Color"]
-	TextLabelMain.Text = "<font color=\"rgb(0, 80, 200)\">Eclipse Hub</font> <font color=\"rgb(255,255,255)\">- Blox Kid</font>"
+	TextLabelMain.Text = "<font color=\"rgb(0, 80, 200)\">Duy Trường Hub</font> <font color=\"rgb(255,255,255)\">- Blox Kid</font>"
 	TextLabelMain.TextStrokeTransparency = 0.8
 	TextLabelMain.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -3680,8 +3680,8 @@ task.spawn(function()
 				or _G.Settings.Farm["Auto Farm Ectoplasm"]
 				or _G.Settings.Farm["Auto Farm Katakuri"]
 				or _G.Settings.Farm["Auto Farm Material"]
-				or _G.EclipseStartFarm
-				or _G.EclipseAutoTyrant;
+				or _G.DuyTruongStartFarm
+				or _G.DuyTruongAutoTyrant;
 			local fastAttackOn = _G.Settings.Setting["Fast Attack New"];
 			if not (fastAttackOn or farmActive) then return; end;
 			local char = game.Players.LocalPlayer.Character;
@@ -3737,7 +3737,7 @@ pcall(function()
 		if gpe then return; end;
 		for _, key in ipairs(_movementKeys) do
 			if input.KeyCode == key then
-				if not _G.EclipseStartFarm and not _G.SailBoats and not _G.EclipseAutoTyrant then
+				if not _G.DuyTruongStartFarm and not _G.SailBoats and not _G.DuyTruongAutoTyrant then
 					shouldTween = false;
 					_G.StopTween = false;
 				end;
@@ -3748,7 +3748,7 @@ pcall(function()
 	UIS.InputBegan:Connect(function(input, gpe)
 		if gpe then return; end;
 		if input.UserInputType == Enum.UserInputType.Touch then
-			if not _G.EclipseStartFarm and not _G.SailBoats and not _G.EclipseAutoTyrant then
+			if not _G.DuyTruongStartFarm and not _G.SailBoats and not _G.DuyTruongAutoTyrant then
 				shouldTween = false;
 				_G.StopTween = false;
 			end;
@@ -3759,7 +3759,7 @@ pcall(function()
 		if input.KeyCode == Enum.KeyCode.Thumbstick1 then
 			local mag = Vector2.new(input.Position.X, input.Position.Y).Magnitude;
 			if mag > 0.15 then
-				if not _G.EclipseStartFarm and not _G.SailBoats and not _G.EclipseAutoTyrant then
+				if not _G.DuyTruongStartFarm and not _G.SailBoats and not _G.DuyTruongAutoTyrant then
 					shouldTween = false;
 					_G.StopTween = false;
 				end;
@@ -3772,7 +3772,7 @@ local Window = Library:CreateWindow({
     Title = "Duy Trường Hub",
     SubTitle = "- Blox Kid",
     SaveFolder = "KidHub.json",
-    Image = "rbxassetid://91657962282669"
+    Image = "rbxassetid://136271563535852"
 })
 
 local InfoTab = Window:AddTab("Tab | Discord")
@@ -3816,9 +3816,9 @@ end);
 InfoTab:AddSection("Discord")
 
 InfoTab:AddButton({
-	Title = "Join On Eclipse Community!",
+	Title = "Join On Duy Trường Community!",
 	Callback = function()
-		setclipboard("https://discord.gg/jfNVNrApfb")
+		setclipboard("chưa có")
 		Library:Notify({
 			Title = "Duy Trường Hub",
 			Content = "Discord link copied to clipboard!",
@@ -3850,15 +3850,15 @@ InfoTab:AddParagraph({
 	Desc = ""
 })
 
-InfoTab:AddSection("Duy Trường Hub Gen4 Version Stable: 🟢")
+InfoTab:AddSection("Duy Trường Hub Version V1.1 Stable: 🟢")
 
 InfoTab:AddParagraph({
-	Title = " Updates:",
-	Desc = "Fix: Tween Teleport\nNew: Fast Attack (High, Super Fast Attack, Eclipse Attack)\nNew: Volcano Event Tab (And More)\nFixed: Random, Store, Teleport To Fruit (Tween Teleport)\nNew: Fishing Functions\nDisabled: Fully Volcanic\nFixed: Tab One Click (Functions Soon)\nNew: Auto True Triple Katana\nFix: Auto Cdk\nFix: Auto Skull Guitar\nFix: Lag\nNew: Teleport (Tab)\nFix: Shop (Tab)\nFix: Factory And Pirate Raid (Tab Farming)\nFix: Farm (Level Bone, Cake Prince, Tirant, More...)\nFix: Raids (Bug)\nFix: Sea Events (Bugs)\nFix: Elite Boss\nFix: Fast Attack (Not Working On Pc)\nNew: Farm Boss And Mastery\nNew: Auto Kick if Admin Joined And Anti Ban\nNew: PvP Functions"
+	Title = "Mới:",
+	Desc = "Fix: Tween Teleport\nNew: Fast Attack (High, Super Fast Attack, DT Attack)\nNew: Volcano Event Tab (And More)\nFixed: Random, Store, Teleport To Fruit (Tween Teleport)\nNew: Fishing Functions\nDisabled: Fully Volcanic\nFixed: Tab One Click (Functions Soon)\nNew: Auto True Triple Katana\nFix: Auto Cdk\nFix: Auto Skull Guitar\nFix: Lag\nNew: Teleport (Tab)\nFix: Shop (Tab)\nFix: Factory And Pirate Raid (Tab Farming)\nFix: Farm (Level Bone, Cake Prince, Tirant, More...)\nFix: Raids (Bug)\nFix: Sea Events (Bugs)\nFix: Elite Boss\nFix: Fast Attack (Not Working On Pc)\nNew: Farm Boss And Mastery\nNew: Auto Kick if Admin Joined And Anti Ban\nNew: PvP Functions"
 })
 InfoTab:AddParagraph({
 	Title = "Curiosity",
-	Desc = "Did you know in the first versions the name changed a lot? Saturn Hub, TRon VOid Hub, Guest Hub (Old), Love Hub and Today Duy Trường Hub!"
+	Desc = "Duy Trường Hub!"
 })
 InfoTab:AddParagraph({
 	Title = "Community",
@@ -6008,7 +6008,7 @@ BringEnemy = function()
 	local bringRange = _G.BringRange or 235;
 	local maxMobs    = _G.MobM or 10;
 	local count      = 0;
-	local isNearest  = (_G.EclipseFarm_Nearest == true);
+	local isNearest  = (_G.DuyTruongFarm_Nearest == true);
 	local mobName    = MonFarm;
 
 	local BRING_UNDER_DIST = 8;
@@ -6075,8 +6075,8 @@ task.spawn(function()
 				or _G.Settings.Main["Auto Farm Fruit Mastery"]
 				or _G.Settings.Main["Auto Farm Sword Mastery"]
 				or _G.Settings.Main["Auto Farm Gun Mastery"]
-				or _G.EclipseStartFarm
-				or _G.EclipseAutoTyrant;
+				or _G.DuyTruongStartFarm
+				or _G.DuyTruongAutoTyrant;
 			_B = farmActive and _G.Settings.Setting["Bring Mob"];
 			if _B then
 				BringEnemy();
@@ -6095,8 +6095,8 @@ task.spawn(function()
 				or _G.Settings.Main["Auto Farm Fruit Mastery"]
 				or _G.Settings.Main["Auto Farm Sword Mastery"]
 				or _G.Settings.Main["Auto Farm Gun Mastery"]
-				or _G.EclipseStartFarm
-				or _G.EclipseAutoTyrant;
+				or _G.DuyTruongStartFarm
+				or _G.DuyTruongAutoTyrant;
 			if farmActive and _G.Settings.Setting["Bring Mob"] then
 				local char = game.Players.LocalPlayer.Character;
 				if not char then return end;
@@ -6238,10 +6238,10 @@ task.spawn(function()
 			local hrp = char:FindFirstChild("HumanoidRootPart");
 			local hum = char:FindFirstChildOfClass("Humanoid");
 			if not hrp or not hum then return; end;
-			if hrp.Anchored and not _G.EclipseAutoTyrant then
+			if hrp.Anchored and not _G.DuyTruongAutoTyrant then
 				hrp.Anchored = false;
 			end;
-			if hum.WalkSpeed <= 0 and not _G.EclipseAutoTyrant then
+			if hum.WalkSpeed <= 0 and not _G.DuyTruongAutoTyrant then
 				hum.WalkSpeed = 16;
 			end;
 		end);
@@ -6651,13 +6651,13 @@ local function QuestNeta()
 	};
 end;
 
-_G.EclipseFarmMode    = "Level";
-_G.EclipseStartFarm   = false;
-_G.EclipseLevel       = false;
-_G.EclipseFarm_Bone   = false;
-_G.EclipseFarm_Cake   = false;
-_G.EclipseAutoTyrant  = false;
-_G.EclipseAcceptQuest = false;
+_G.DuyTruongFarmMode    = "Level";
+_G.DuyTruongStartFarm   = false;
+_G.DuyTruongLevel       = false;
+_G.DuyTruongFarm_Bone   = false;
+_G.DuyTruongFarm_Cake   = false;
+_G.DuyTruongAutoTyrant  = false;
+_G.DuyTruongAcceptQuest = false;
 
 local FARM_HEIGHT          = 45;
 local TP_DIST_THRESHOLD    = 15;
@@ -6675,7 +6675,7 @@ MainTab:AddDropdown({
 	Values = {"Level", "Bone", "Cake Prince", "Tyrant Of The Skies", "Nearest"},
 	Value = "Level",
 	Callback = function(v)
-		_G.EclipseFarmMode = v;
+		_G.DuyTruongFarmMode = v;
 	end
 });
 
@@ -6698,7 +6698,7 @@ MainTab:AddToggle({
 	Desc = "Aceita quest automaticamente antes de farmar",
 	Value = false,
 	Callback = function(v)
-		_G.EclipseAcceptQuest = v;
+		_G.DuyTruongAcceptQuest = v;
 	end
 });
 
@@ -6707,36 +6707,36 @@ AutoLevelFarmToggle = MainTab:AddToggle({
 	Desc = "Inicia o modo de farm selecionado",
 	Value = _G.Settings.Main["Auto Farm"],
 	Callback = function(v)
-		_G.EclipseStartFarm = v;
+		_G.DuyTruongStartFarm = v;
 		_G.Settings.Main["Auto Farm"] = v;
-		_G.EclipseLevel      = false;
-		_G.EclipseFarm_Bone  = false;
-		_G.EclipseFarm_Cake  = false;
-		_G.EclipseAutoTyrant = false;
-		_G.EclipseFarm_Nearest = false;
+		_G.DuyTruongLevel      = false;
+		_G.DuyTruongFarm_Bone  = false;
+		_G.DuyTruongFarm_Cake  = false;
+		_G.DuyTruongAutoTyrant = false;
+		_G.DuyTruongFarm_Nearest = false;
 		if v then
-			if _G.EclipseFarmMode == "Level" then
-				_G.EclipseLevel = true;
-			elseif _G.EclipseFarmMode == "Bone" then
-				_G.EclipseFarm_Bone = true;
-			elseif _G.EclipseFarmMode == "Cake Prince" then
-				_G.EclipseFarm_Cake = true;
-			elseif _G.EclipseFarmMode == "Tyrant Of The Skies" then
-				_G.EclipseAutoTyrant = true;
-			elseif _G.EclipseFarmMode == "Nearest" then
-				_G.EclipseFarm_Nearest = true;
+			if _G.DuyTruongFarmMode == "Level" then
+				_G.DuyTruongLevel = true;
+			elseif _G.DuyTruongFarmMode == "Bone" then
+				_G.DuyTruongFarm_Bone = true;
+			elseif _G.DuyTruongFarmMode == "Cake Prince" then
+				_G.DuyTruongFarm_Cake = true;
+			elseif _G.DuyTruongFarmMode == "Tyrant Of The Skies" then
+				_G.DuyTruongAutoTyrant = true;
+			elseif _G.DuyTruongFarmMode == "Nearest" then
+				_G.DuyTruongFarm_Nearest = true;
 			end;
 		end;
-		StopTween(_G.EclipseStartFarm);
+		StopTween(_G.DuyTruongStartFarm);
 		(getgenv()).SaveSetting();
 	end
 });
 
-_G.EclipseFarm_Nearest = false;
+_G.DuyTruongFarm_Nearest = false;
 _G.NearestFarmRadius = 150;
 task.spawn(function()
 	while task.wait(0.15) do
-		if not _G.EclipseFarm_Nearest or not _G.EclipseStartFarm then task.wait(0.3); continue; end;
+		if not _G.DuyTruongFarm_Nearest or not _G.DuyTruongStartFarm then task.wait(0.3); continue; end;
 		task.wait(0.1);
 		pcall(function()
 			local plr  = game.Players.LocalPlayer;
@@ -6783,7 +6783,7 @@ end);
 
 task.spawn(function()
 	while task.wait(0.2) do
-		if _G.EclipseLevel and _G.EclipseStartFarm then
+		if _G.DuyTruongLevel and _G.DuyTruongStartFarm then
 			pcall(function()
 				CheckQuest();
 				local plr = game:GetService("Players").LocalPlayer;
@@ -6864,7 +6864,7 @@ task.spawn(function()
 									MonFarm = v.Name;
 									pcall(function() v.Humanoid.WalkSpeed = 0; v.HumanoidRootPart.Size = Vector3.new(1,1,1); v.HumanoidRootPart.CanCollide = false; end);
 									Attack();
-								until not _G.EclipseStartFarm or not _G.EclipseLevel or v.Humanoid.Health <= 0 or (not v.Parent) or (game:GetService("Players")).LocalPlayer.PlayerGui.Main.Quest.Visible == false;
+								until not _G.DuyTruongStartFarm or not _G.DuyTruongLevel or v.Humanoid.Health <= 0 or (not v.Parent) or (game:GetService("Players")).LocalPlayer.PlayerGui.Main.Quest.Visible == false;
 							end;
 						end;
 					else
@@ -6880,7 +6880,7 @@ end);
 
 task.spawn(function()
 	while task.wait(0.15) do
-		if not (_G.EclipseFarm_Bone and _G.EclipseStartFarm) then continue; end;
+		if not (_G.DuyTruongFarm_Bone and _G.DuyTruongStartFarm) then continue; end;
 		pcall(function()
 			local plr = game.Players.LocalPlayer;
 			local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart");
@@ -6888,12 +6888,12 @@ task.spawn(function()
 			local QuestUI  = plr.PlayerGui.Main.Quest;
 			local MOBS     = {"Reborn Skeleton","Living Zombie","Demonic Soul","Posessed Mummy"};
 			local npcPos   = CFrame.new(-9516.99, 172.01, 6078.46);
-			if _G.EclipseAcceptQuest and not QuestUI.Visible then
+			if _G.DuyTruongAcceptQuest and not QuestUI.Visible then
 				if (npcPos.Position - hrp.Position).Magnitude > 5 then
 					TweenPlayer(npcPos);
 					local t = 0;
 					repeat task.wait(0.1); t = t + 0.1;
-					until (npcPos.Position - hrp.Position).Magnitude <= 5 or t > 8 or not _G.EclipseFarm_Bone;
+					until (npcPos.Position - hrp.Position).Magnitude <= 5 or t > 8 or not _G.DuyTruongFarm_Bone;
 				else
 					local quests = {
 						{"StartQuest","HauntedQuest1",1},{"StartQuest","HauntedQuest1",2},
@@ -6925,7 +6925,7 @@ task.spawn(function()
 					until (closest.PrimaryPart.Position - hrp.Position).Magnitude <= 25
 						or t > 5
 						or not (closest.Parent and closest:FindFirstChild("Humanoid") and closest.Humanoid.Health > 0)
-						or not _G.EclipseFarm_Bone;
+						or not _G.DuyTruongFarm_Bone;
 				end;
 				EquipWeapon(_G.Settings.Main["Selected Weapon"]);
 				if closest.Parent and closest:FindFirstChild("Humanoid") and closest.Humanoid.Health > 0 then
@@ -6940,7 +6940,7 @@ task.spawn(function()
 					TweenPlayer(spawnCF);
 					local t = 0;
 					repeat task.wait(0.1); t = t + 0.1;
-					until (spawnCF.Position - hrp.Position).Magnitude <= 20 or t > 10 or not _G.EclipseFarm_Bone;
+					until (spawnCF.Position - hrp.Position).Magnitude <= 20 or t > 10 or not _G.DuyTruongFarm_Bone;
 				end;
 			end;
 		end);
@@ -6949,7 +6949,7 @@ end);
 
 task.spawn(function()
 	while task.wait(0.15) do
-		if not (_G.EclipseFarm_Cake and _G.EclipseStartFarm) then continue; end;
+		if not (_G.DuyTruongFarm_Cake and _G.DuyTruongStartFarm) then continue; end;
 		pcall(function()
 			local plr     = game.Players.LocalPlayer;
 			local hrp     = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart");
@@ -6968,7 +6968,7 @@ task.spawn(function()
 				TweenPlayer(CakePos);
 				local t = 0;
 				repeat task.wait(0.1); t = t + 0.1;
-				until (hrp.Position - CakePos.Position).Magnitude <= 3000 or t > 15 or not _G.EclipseFarm_Cake;
+				until (hrp.Position - CakePos.Position).Magnitude <= 3000 or t > 15 or not _G.DuyTruongFarm_Cake;
 				return;
 			end;
 			if boss or portalOpen then
@@ -6978,7 +6978,7 @@ task.spawn(function()
 						TweenPlayer(bossTarget);
 						local t = 0;
 						repeat task.wait(0.05); t = t + 0.05;
-						until (bossTarget.Position - hrp.Position).Magnitude <= 30 or t > 6 or not _G.EclipseFarm_Cake;
+						until (bossTarget.Position - hrp.Position).Magnitude <= 30 or t > 6 or not _G.DuyTruongFarm_Cake;
 					end;
 					EquipWeapon(_G.Settings.Main["Selected Weapon"]);
 					G.Kill(boss, true);
@@ -6990,7 +6990,7 @@ task.spawn(function()
 				return;
 			end;
 			local CAKE_MOBS = {"Cookie Crafter","Cake Guard","Baking Staff","Head Baker"};
-			if _G.EclipseAcceptQuest and not plr.PlayerGui.Main.Quest.Visible then
+			if _G.DuyTruongAcceptQuest and not plr.PlayerGui.Main.Quest.Visible then
 				local questPos = CFrame.new(-1927.92, 37.80, -12842.54);
 				TpConditional(hrp, questPos, TP_DIST_THRESHOLD);
 				if (hrp.Position - questPos.Position).Magnitude <= 40 then
@@ -7022,7 +7022,7 @@ task.spawn(function()
 						or t > 5
 						or not (bestMob.Parent and bestMob.Humanoid.Health > 0)
 						or enemies:FindFirstChild("Cake Prince")
-						or not _G.EclipseFarm_Cake;
+						or not _G.DuyTruongFarm_Cake;
 				end;
 				if bestMob.Parent and bestMob.Humanoid.Health > 0 then
 					EquipWeapon(_G.Settings.Main["Selected Weapon"]);
@@ -7038,7 +7038,7 @@ end);
 
 task.spawn(function()
 	game:GetService("RunService").Stepped:Connect(function()
-		if _G.EclipseAutoTyrant and _G.EclipseStartFarm then
+		if _G.DuyTruongAutoTyrant and _G.DuyTruongStartFarm then
 			local char = game.Players.LocalPlayer.Character;
 			if char then
 				for _, part in pairs(char:GetDescendants()) do
@@ -7185,7 +7185,7 @@ local _TYRANT_DODGE_INTERVAL = 0.35;
 
 task.spawn(function()
 	while task.wait(0.05) do
-		if not (_G.EclipseAutoTyrant and _G.EclipseStartFarm) then continue; end;
+		if not (_G.DuyTruongAutoTyrant and _G.DuyTruongStartFarm) then continue; end;
 		pcall(function()
 			local plr  = game.Players.LocalPlayer;
 			local boss = workspace.Enemies:FindFirstChild("Tyrant of the Skies");
@@ -7210,7 +7210,7 @@ task.spawn(function()
 						plrChar = plr.Character;
 						plrHum  = plrChar and plrChar:FindFirstChildOfClass("Humanoid");
 						if plrHRP and plrHRP.Parent then plrHRP.CFrame = CFrame.new(highPos); end;
-					until (not _G.EclipseAutoTyrant) or (plrHum and plrHum.Health >= 10000) or t > 40;
+					until (not _G.DuyTruongAutoTyrant) or (plrHum and plrHum.Health >= 10000) or t > 40;
 					if plrHRP and plrHRP.Parent then plrHRP.Anchored = false; end;
 					return;
 				end;
@@ -7261,7 +7261,7 @@ task.spawn(function()
 				local hasQuest = pcall(function() return plr.PlayerGui.Main.Quest.Visible; end);
 				local questVisible = false;
 				pcall(function() questVisible = plr.PlayerGui.Main.Quest.Visible; end);
-				if _G.EclipseAcceptQuest and not questVisible then
+				if _G.DuyTruongAcceptQuest and not questVisible then
 					local char = plr.Character;
 					local hrp  = char and char:FindFirstChild("HumanoidRootPart");
 					if hrp then
@@ -10024,7 +10024,7 @@ task.spawn(function()
 			if _isSpecialChestItem() then
 				_chestTweenActive = false;
 				_G.Settings.Farm["Auto Farm Chest Tween"] = false;
-				Library:Notify({Title = "Eclipse Hub", Content = "Special item found! Auto Chest stopped.", Icon = "bell", Duration = 6});
+				Library:Notify({Title = "Duy Trường Hub", Content = "Special item found! Auto Chest stopped.", Icon = "bell", Duration = 6});
 				return;
 			end;
 			local chests = {};
@@ -10043,7 +10043,7 @@ task.spawn(function()
 				if _isSpecialChestItem() then
 					_chestTweenActive = false;
 					_G.Settings.Farm["Auto Farm Chest Tween"] = false;
-					Library:Notify({Title = "Eclipse Hub", Content = "Special item found!", Icon = "bell", Duration = 6});
+					Library:Notify({Title = "Duy Trường Hub", Content = "Special item found!", Icon = "bell", Duration = 6});
 					break;
 				end;
 				local targetCF = v.RootPart.CFrame;
@@ -10597,7 +10597,7 @@ local function ShowResetConfirm()
 	pcall(function()
 		local plr = game.Players.LocalPlayer;
 		local screenGui = Instance.new("ScreenGui");
-		screenGui.Name = "EclipseResetConfirm";
+		screenGui.Name = "DuyTruongResetConfirm";
 		screenGui.ResetOnSpawn = false;
 		screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 		screenGui.Parent = plr.PlayerGui;
@@ -10733,7 +10733,7 @@ task.spawn(function()
 				);
 				pcall(function() hrp.CFrame = hrp.CFrame * CFrame.new(jitter); end);
 			end;
-			if _G.FullyVolcanicActive or _G.EclipseStartFarm or _G.Settings.Main["Auto Farm"] then
+			if _G.FullyVolcanicActive or _G.DuyTruongStartFarm or _G.Settings.Main["Auto Farm"] then
 				pcall(function()
 					if not char:FindFirstChild("HasBuso") then
 						game.ReplicatedStorage.Remotes.CommF_:InvokeServer("Buso");
@@ -10991,9 +10991,9 @@ task.spawn(function()
 		task.wait(0);
 		if _G.Settings.Setting["Fast M1 Fruit"]
 			and (_G.ChooseWP == "Fruit" or _G.Settings.Main["Select Weapon"] == "Fruit")
-			and (_G.EclipseStartFarm or _G.Settings.Main["Auto Farm Mon"] or _G.Settings.Main["Auto Farm Fast"]
+			and (_G.DuyTruongStartFarm or _G.Settings.Main["Auto Farm Mon"] or _G.Settings.Main["Auto Farm Fast"]
 				or _G.Settings.Main["Auto Farm All Boss"] or _G.Settings.Main["Auto Farm Boss"]
-				or _G.Settings.Main["Auto Farm Fruit Mastery"] or _G.EclipseLevel)
+				or _G.Settings.Main["Auto Farm Fruit Mastery"] or _G.DuyTruongLevel)
 		then
 			pcall(function()
 				local char = game.Players.LocalPlayer.Character;
@@ -14395,8 +14395,8 @@ task.spawn(function()
 			local char = game.Players.LocalPlayer.Character;
 			if not char then return; end;
 			local hum = char:FindFirstChildOfClass("Humanoid");
-			if hum and not _G.EclipseLevel and not _G.EclipseFarm_Bone
-					and not _G.EclipseFarm_Cake and not _G.EclipseAutoTyrant then
+			if hum and not _G.DuyTruongLevel and not _G.DuyTruongFarm_Bone
+					and not _G.DuyTruongFarm_Cake and not _G.DuyTruongAutoTyrant then
 				if hum.WalkSpeed < 16 then hum.WalkSpeed = 16; end;
 			end;
 		end);
@@ -14900,10 +14900,10 @@ elseif World3 then
 		"Dragon Dojo"
 	};
 end;
-local EclipseIslandList = {};
+local DuyTruongIslandList = {};
 pcall(function()
 	for _, loc in pairs(workspace._WorldOrigin.Locations:GetChildren()) do
-		table.insert(EclipseIslandList, loc.Name);
+		table.insert(DuyTruongIslandList, loc.Name);
 	end;
 end);
 local PortalIslands = {
@@ -14916,9 +14916,9 @@ local PortalIslands = {
 };
 SelectedTeleportIslandDropdown = TeleportTab:AddDropdown({
 	Title = "Choose Island",
-	Desc = "Lista dinamica do Eclipse - le o mapa real",
-	Values = EclipseIslandList,
-	Value = EclipseIslandList[1] or "",
+	Desc = "Lista dinamica do Duy Trường - le o mapa real",
+	Values = DuyTruongIslandList,
+	Value = DuyTruongIslandList[1] or "",
 	Callback = function(option)
 		_G.SelectIsland = option;
 	end
@@ -15056,21 +15056,21 @@ AutoTweenToIslandToggle = TeleportTab:AddToggle({
 });
 
 TeleportNpcSection = TeleportTab:AddSection("Npc");
-local EclipseNPCList = {};
+local DuyTruongNPCList = {};
 pcall(function()
 	local replNPCs = (game:GetService("ReplicatedStorage")):FindFirstChild("NPCs");
 	if replNPCs then
 		for _, npc in pairs(replNPCs:GetChildren()) do
-			table.insert(EclipseNPCList, npc.Name);
+			table.insert(DuyTruongNPCList, npc.Name);
 		end;
 	end;
 end);
-local SelectedNpcName = EclipseNPCList[1] or "";
+local SelectedNpcName = DuyTruongNPCList[1] or "";
 SelectedNpcTeleport = TeleportTab:AddDropdown({
 	Title = "Choose Npc",
-	Desc = "Lista dinamica do Eclipse - NPCs reais do servidor",
-	Values = EclipseNPCList,
-	Value = EclipseNPCList[1] or "",
+	Desc = "Lista dinamica do Duy Trường - NPCs reais do servidor",
+	Values = DuyTruongNPCList,
+	Value = DuyTruongNPCList[1] or "",
 	Callback = function(option)
 		SelectedNpcName = option;
 		_G.SelectNPC = option;
