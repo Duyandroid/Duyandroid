@@ -618,7 +618,7 @@ function Library:CreateWindow(Setting)
 	TextLabelMain.TextWrapped = true
 	TextLabelMain.TextXAlignment = Enum.TextXAlignment.Center
 	TextLabelMain.TextColor3 = getgenv().UIColor["GUI Text Color"]
-	TextLabelMain.Text = "<font color=\"rgb(0, 80, 200)\">Duy Trường Hub</font> <font color=\"rgb(255,255,255)\">- Blox Kid</font>"
+	TextLabelMain.Text = "<font color=\"rgb(255, 0, 0)\">Duy Trường Hub</font> <font color=\"rgb(255, 255, 0)\">- Blox Kid</font>"
 	TextLabelMain.TextStrokeTransparency = 0.8
 	TextLabelMain.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -3606,12 +3606,12 @@ end
             end)
         end
 
-        function pagefunc:AddDiscordInvite(setting)
+        function pagefunc:AddinfoInvite(setting)
             local prevSec = _curSec
-            local sec = pageFunction:AddSection(setting.Name or "Discord")
+            local sec = pageFunction:AddSection(setting.Name or "info")
             pcall(function()
                 sec:AddButton({
-                    Title    = "Join Discord",
+                    Title    = "",
                     Callback = function()
                         pcall(function() setclipboard(setting.Invite or "") end)
                     end,
@@ -3775,7 +3775,7 @@ local Window = Library:CreateWindow({
     Image = "rbxassetid://136271563535852"
 })
 
-local InfoTab = Window:AddTab("Tab | Discord")
+local InfoTab = Window:AddTab("Tab | info")
 local ServerTab = Window:AddTab("Tab | Status and Server")
 local SettingsTab = Window:AddTab("Tab | Settings")
 local HoldAndSkillTab = Window:AddTab("Tab | Hold And Skill")
@@ -3813,10 +3813,10 @@ task.delay(2, function()
 	end);
 end);
 
-InfoTab:AddSection("Discord")
+InfoTab:AddSection("info")
 
 InfoTab:AddButton({
-	Title = "Join On Eclipse Community!",
+	Title = "Join On Duy Trường Community!",
 	Callback = function()
 		setclipboard("chưa có")
 		Library:Notify({
@@ -3833,14 +3833,6 @@ InfoTab:AddSection("Duy Trường Hub Version V1.1 Stable: 🟢")
 InfoTab:AddParagraph({
 	Title = "Mới:",
 	Desc = "Fix: Tween Teleport\nNew: Fast Attack (High, Super Fast Attack, Dt Attack)\nNew: Volcano Event Tab (And More)\nFixed: Random, Store, Teleport To Fruit (Tween Teleport)\nNew: Fishing Functions\nDisabled: Fully Volcanic\nFixed: Tab One Click (Functions Soon)\nNew: Auto True Triple Katana\nFix: Auto Cdk\nFix: Auto Skull Guitar\nFix: Lag\nNew: Teleport (Tab)\nFix: Shop (Tab)\nFix: Factory And Pirate Raid (Tab Farming)\nFix: Farm (Level Bone, Cake Prince, Tirant, More...)\nFix: Raids (Bug)\nFix: Sea Events (Bugs)\nFix: Elite Boss\nFix: Fast Attack (Not Working On Pc)\nNew: Farm Boss And Mastery\nNew: Auto Kick if Admin Joined And Anti Ban\nNew: PvP Functions"
-})
-InfoTab:AddParagraph({
-	Title = "Curiosity",
-	Desc = "Duy Trường Hub!"
-})
-InfoTab:AddParagraph({
-	Title = "Community",
-	Desc = ""
 })
 
 
