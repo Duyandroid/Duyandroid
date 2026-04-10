@@ -69,7 +69,7 @@ local T1UIColor = {
     ["Toggle Border Color"] = Color3.fromRGB(70, 70, 70),
     ["Toggle Checked Color"] = Color3.fromRGB(0, 80, 200),
     ["Toggle Desc Color"] = Color3.fromRGB(180, 180, 180),
-    ["Button Color"] = Color3.fromRGB(0, 80, 200),
+    ["Button Color"] = Color3.fromRGB(),
     ["Label Color"] = Color3.fromRGB(0, 80, 200),
     ["Dropdown Icon Color"] = Color3.fromRGB(0, 80, 200),
     ["Dropdown Selected Color"] = Color3.fromRGB(0, 80, 200),
@@ -592,7 +592,7 @@ function Library:CreateWindow(Setting)
 	
 	local TopStroke = Instance.new("Frame", TopMain)
 	TopStroke.Name = "TopStroke"
-	TopStroke.BackgroundColor3 = Color3.fromRGB(0, 80, 200)
+	TopStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TopStroke.BackgroundTransparency = 0.6
 	TopStroke.BorderSizePixel = 0
 	TopStroke.Position = UDim2.new(0, 0, 1, -1)
@@ -630,7 +630,7 @@ function Library:CreateWindow(Setting)
 	PageControl.BackgroundTransparency = 0
 
 	local pageControlStroke = Instance.new("UIStroke", PageControl)
-	pageControlStroke.Color = Color3.fromRGB(0, 80, 200)
+	pageControlStroke.Color = Color3.fromRGB(255, 165, 0)
 	pageControlStroke.Thickness = 1
 
 
