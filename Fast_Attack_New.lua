@@ -4,7 +4,7 @@ local Window = Rayfield:CreateWindow({
     Name = "Fast Attack By Duy Trường Hub",
     LoadingTitle = "Loading...",
     LoadingSubtitle = "Clean Mode",
-    ConfigurationSaving = {Enabled = false}
+    ConfigurationSaving = {Enabled = true}
 })
 
 local Tab = Window:CreateTab("Main", 4483362458)
@@ -16,7 +16,7 @@ _G.Combo = 2
 
 Tab:CreateToggle({
     Name = "Enable Fast Attack",
-    CurrentValue = false,
+    CurrentValue = true,
     Callback = function(v)
         _G.FastAttack = v
     end
