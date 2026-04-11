@@ -1,7 +1,7 @@
 
 
 _G.FastAttack = true
-_G.AttackRange = 1000
+_G.AttackRange = 100
 _G.Attackspeed =  100
 _G.HitRate = 0.1
 _G.Combo = 2
