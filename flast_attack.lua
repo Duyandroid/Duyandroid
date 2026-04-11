@@ -1,27 +1,8 @@
-Default = "Melee",
-    Multi = false,
-    Callback = function(I)
-        _G.ChooseWP = I
-    end,
-})
 
-spawn(function()
-    while wait(Sec) do
-        pcall(function()
-            for _, e in pairs(plr.Backpack:GetChildren()) do
-                if e.ToolTip == _G.ChooseWP then
-                    if plr.Backpack:FindFirstChild(e.Name) then
-                        _G.SelectWeapon = e.Name
-                    end
-                end
-            end
-        end)
-    end
-end)
 
 _G.FastAttack = true
 _G.AttackRange = 100
-_G.Attackspeed =  20
+_G.Attackspeed =  100
 _G.HitRate = 0.1
 _G.Combo = 2
 
