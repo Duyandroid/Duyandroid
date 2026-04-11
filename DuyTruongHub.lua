@@ -69,7 +69,7 @@ local T1UIColor = {
     ["Toggle Border Color"] = Color3.fromRGB(70, 70, 70),
     ["Toggle Checked Color"] = Color3.fromRGB(0, 80, 200),
     ["Toggle Desc Color"] = Color3.fromRGB(180, 180, 180),
-    ["Button Color"] = Color3.fromRGB(),
+    ["Button Color"] = Color3.fromRGni(0, 0, 0),
     ["Label Color"] = Color3.fromRGB(0, 80, 200),
     ["Dropdown Icon Color"] = Color3.fromRGB(0, 80, 200),
     ["Dropdown Selected Color"] = Color3.fromRGB(0, 80, 200),
@@ -527,7 +527,7 @@ function Library:CreateWindow(Setting)
 
 	Main.Name = "Main"
 	Main.Parent = Library_Function.Gui
-	Main.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+	Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	Main.BackgroundTransparency = 1.000
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -560,7 +560,7 @@ function Library:CreateWindow(Setting)
 
 	local uistr = Instance.new("UIStroke", MainContainer);
 	uistr.Thickness = 1;
-	uistr.Color = Color3.fromRGB(255, 255, 255);
+	uistr.Color = Color3.fromRGB(0, 0, 0);
 
 
 	getgenv().ReadyForGuiLoaded = true
@@ -571,7 +571,7 @@ function Library:CreateWindow(Setting)
 
 	Concacontainer.Name = "Concacontainer"
 	Concacontainer.Parent = MainContainer
-	Concacontainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Concacontainer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	Concacontainer.BackgroundTransparency = 1.000
 	Concacontainer.ClipsDescendants = true
 	Concacontainer.Position = UDim2.new(0, 0, 0, 30)
@@ -586,7 +586,7 @@ function Library:CreateWindow(Setting)
 	
 	TopMain.Name = "TopMain"
 	TopMain.Parent = MainContainer
-	TopMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TopMain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	TopMain.BackgroundTransparency = 1.000
 	TopMain.Size = UDim2.new(1, 0, 0, 25)
 	
