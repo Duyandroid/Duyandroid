@@ -2662,7 +2662,7 @@ task.spawn(function()
             end
         end
     end
-end
+end)
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
