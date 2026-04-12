@@ -1,5 +1,5 @@
 getgenv().script_key = "1"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fix.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/fix.lua"))();
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_attack.lua"))()
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
