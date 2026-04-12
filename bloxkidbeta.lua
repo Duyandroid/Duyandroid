@@ -2933,7 +2933,7 @@ local function performClick()
     
     getgenv().AutoClickShootSettings.LastClickTime = currentTime
 end
-local redz   = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/bloxkidbeta.lua"))()
+
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/text.lua"))()
 local Window = redzlib:MakeWindow({
     Title = "Duy Trường V1 [Free]",
@@ -12911,4 +12911,4 @@ v12:AddToggle({
         end)
     end
 })
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_attack.lua"))()
