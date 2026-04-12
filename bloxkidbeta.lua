@@ -1,5 +1,5 @@
-getgenv().script_key = ""
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_attack.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_attack.lua"))();
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
         local service = game:GetService(serviceName)
@@ -2933,7 +2933,7 @@ local function performClick()
     
     getgenv().AutoClickShootSettings.LastClickTime = currentTime
 end
-
+local redz   = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/bloxkidbeta.lua"))()
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/text.lua"))()
 local Window = redzlib:MakeWindow({
     Title = "Duy Trường V1 [Free]",
