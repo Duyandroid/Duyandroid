@@ -1,5 +1,4 @@
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_attack.lua"))();
 local Services = setmetatable({}, {
     __index = function(self, serviceName)
         local service = game:GetService(serviceName)
@@ -12911,4 +12910,5 @@ v12:AddToggle({
         end)
     end
 })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Duyandroid/Duyandroid/refs/heads/main/flast_attack.lua"))()
 print('✅ Duy Trường Hub - Tất cả tính năng đã được load!')
