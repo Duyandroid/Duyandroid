@@ -92,7 +92,7 @@ if ({
         World3 = true
     end
 else
-    game.Players.LocalPlayer:Kick('Unsupported Game')
+  
 end
 
 repeat
